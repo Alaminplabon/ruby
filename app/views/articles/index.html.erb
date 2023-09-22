@@ -1,0 +1,18 @@
+<h1>Articles</h1>
+
+<ul>
+  <% @articles.each do |article| %>
+    <li>
+      <a href="/articles/<%= article.id %>">
+        DataList
+        <%= article.id %>
+      </a>
+    </li>
+      <li>
+      <a href="/articles/<%= article.id %>">
+        Date
+        <%= article.id %>
+      </a>
+    </li>
+  <% end %>
+</ul>
